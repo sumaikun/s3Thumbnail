@@ -1,0 +1,40 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.17.0/libexec/bin/yarn.js add --arch=x64 --platform=linux --target=10.16.0 sharp
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/jesusvega/Library/Android/sdk/tools:/Users/jesusvega/Library/Android/sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/Cellar/rabbitmq/3.7.16/sbin/:/Users/jesusvega/go/bin
+
+Yarn version: 
+  1.17.0
+
+Node version: 
+  10.16.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EACCES: permission denied, unlink '/Users/jesusvega/Desktop/App-dev/Node/lambdas3/node_modules/shar/.eslintrc'
+
+npm manifest: 
+  {
+    "name": "lambdas3",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "jesus.vega",
+    "license": "ISC",
+    "dependencies": {
+      "shar": "^0.2.0",
+      "sharp": "^0.25.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

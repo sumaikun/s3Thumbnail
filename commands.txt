@@ -1,0 +1,13 @@
+0. generate project
+npm init
+1. extra package
+npm install sharp
+2. generate zip
+zip -r function.zip .
+3.update lambda with cli
+aws lambda update-function-configuration --function-name CreateThumbnail --timeout 30
+4. create if necessary
+aws lambda create-function --function-name CreateThumbnail \
+--zip-file fileb://function.zip --handler index.handler --runtime nodejs12.x \
+--timeout 10 --memory-size 1024 \
+--role arn:aws:iam::796501832092:role/Dropshipping-Role
